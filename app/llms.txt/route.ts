@@ -43,7 +43,8 @@ Icons can be copied from the site with nothing to install, or installed from npm
 npm packages (all published, version 0.1.0):
 
 - \`runeicons\`: raw SVG data and a buildSvg helper
-- \`runeicons-react\`, \`runeicons-vue\`, \`runeicons-svelte\`, \`runeicons-astro\`: components
+- \`runeicons-react\`: one component per icon (such as \`ArrowDown\`), plus a \`RuneIcon\` component
+- \`runeicons-vue\`, \`runeicons-svelte\`, \`runeicons-astro\`: components
 - \`runeicons-react-native\`: one component per icon, with react-native-svg
 - \`runeicons-mcp\`: MCP server for AI agents, run with \`npx -y runeicons-mcp\`
 - \`runeicons-brands\`: third-party brand logos as SVG files

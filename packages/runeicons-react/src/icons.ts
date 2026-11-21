@@ -1,14 +1,15 @@
 import { type IconEntry, ICONS } from "./icons.generated.js";
+import type { IconType } from "./types.js";
 
-export type { IconEntry };
-export type IconType = keyof IconEntry["variants"];
+export type { IconEntry, IconType };
 
 export const ICON_TYPES: IconType[] = ["normal", "duotone", "fill", "pixelated", "glass"];
 
-const BY_ID = new Map<string, IconEntry>(ICONS.map((icon) => [icon.id, icon]));
+let byId: Map<string, IconEntry> | undefined;
 
 export function getIconById(id: string): IconEntry | undefined {
-  return BY_ID.get(id);
+  byId ??= new Map(ICONS.map((icon) => [icon.id, icon]));
+  return byId.get(id);
 }
 
 export function availableTypes(icon: IconEntry): IconType[] {

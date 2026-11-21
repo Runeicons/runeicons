@@ -49,7 +49,7 @@ const PACKAGES: Pkg[] = [
     dir: "runeicons-react",
     name: "runeicons-react",
     platform: "React",
-    description: "A RuneIcon component. Works in server and client components.",
+    description: "One component per icon, plus RuneIcon. Works in server and client components.",
     install: "pnpm add runeicons-react",
   },
   {

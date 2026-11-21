@@ -5,3 +5,6 @@ bun.lock
 bun.lockb
 *.vsix
 src/brands.generated.ts
+src/icons/
+src/components.generated.ts
+src/registry.generated.ts

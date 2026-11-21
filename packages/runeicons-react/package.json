@@ -1,6 +1,6 @@
 {
   "name": "runeicons-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React components for RuneIcons: 350+ icons, 900+ variants across five styles.",
   "keywords": [
     "icons",
@@ -31,6 +31,10 @@
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     },
+    "./icons/*": {
+      "types": "./dist/icons/*.d.ts",
+      "default": "./dist/icons/*.js"
+    },
     "./brands": {
       "types": "./dist/brands.d.ts",
       "default": "./dist/brands.js"
@@ -46,7 +50,7 @@
   },
   "scripts": {
     "generate": "bun run scripts/build.ts && bun run scripts/build-brands.ts",
-    "build": "bun run generate && tsc -p tsconfig.build.json",
+    "build": "bun run generate && rm -rf dist && tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "test": "bun run generate && bun run typecheck && bun test",
     "prepublishOnly": "bun run build && bun run typecheck && bun test"

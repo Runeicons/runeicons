@@ -1,24 +1,6 @@
-import { getIconById, type IconType } from "./icons.js";
+export * from "./components.generated.js";
 
-export interface RuneIconProps {
-  name: string;
-  type?: IconType;
-  size?: number;
-}
-
-export function RuneIcon({ name, type = "normal", size = 24 }: RuneIconProps) {
-  const variant = getIconById(name)?.variants[type];
-  if (!variant) return null;
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox={variant.viewBox}
-      dangerouslySetInnerHTML={{ __html: variant.markup }}
-    />
-  );
-}
+export { RuneIcon, type RuneIconProps } from "./rune-icon.js";
 
 export {
   ICON_TYPES,
@@ -27,5 +9,6 @@ export {
   getIconById,
   searchIcons,
   type IconEntry,
-  type IconType,
 } from "./icons.js";
+
+export type { IconComponent, IconProps, IconType } from "./types.js";

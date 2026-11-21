@@ -7,7 +7,7 @@ Platform packages for Rune Icons. Most of them are JavaScript packages in the ro
 | Package                  | Install                                               | Distributed via                   | What it is                                         |
 | :----------------------- | :---------------------------------------------------- | :-------------------------------- | :------------------------------------------------- |
 | `runeicons`              | `npm install runeicons`                               | npm                               | Core, framework-free SVG data and helpers          |
-| `runeicons-react`        | `npm install runeicons-react`                         | npm                               | React component                                    |
+| `runeicons-react`        | `npm install runeicons-react`                         | npm                               | React components, one per icon                     |
 | `runeicons-vue`          | `npm install runeicons-vue`                           | npm                               | Vue 3 component                                    |
 | `runeicons-svelte`       | `npm install runeicons-svelte`                        | npm                               | Svelte 5 component (ships source)                  |
 | `runeicons-astro`        | `npm install runeicons-astro`                         | npm                               | Astro component (ships source)                     |
@@ -36,7 +36,7 @@ Platform packages for Rune Icons. Most of them are JavaScript packages in the ro
 
 Brand logos are other companies' trademarks, shown for identification only. They are not covered by Rune Icons' Apache 2.0 license, and each keeps its own license. See `public/brand-logos/NOTICE.md`.
 
-The framework packages (`runeicons-react`, `runeicons-vue`, `runeicons-svelte`, `runeicons-astro`) each export a `RuneIcon` component with the same `name`, `type` and `size` props. Their helpers have the same names as the ones in `runeicons`, but the signatures differ. See each package's README.
+The framework packages (`runeicons-react`, `runeicons-vue`, `runeicons-svelte`, `runeicons-astro`) each export a `RuneIcon` component with the same `name`, `type` and `size` props. `runeicons-react` also exports one component per icon style, such as `ArrowDown` or `ArchiveGlass`, so bundlers only include the icons you import. Their helpers have the same names as the ones in `runeicons`, but the signatures differ. See each package's README.
 
 ## Running tests
 

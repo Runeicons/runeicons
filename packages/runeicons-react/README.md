@@ -16,24 +16,64 @@ Peer dependencies: `react` and `react-dom` version 19.
 ## Quick start
 
 ```tsx
-import { RuneIcon } from "runeicons-react";
+import { ArrowDown, Back2Glass, HouseFill } from "runeicons-react";
 
 export function Toolbar() {
   return (
     <div style={{ color: "#1f2937" }}>
-      <RuneIcon name="tools-house" />
+      <ArrowDown />
 
-      <RuneIcon name="tools-house" type="fill" size={32} />
+      <HouseFill size={32} />
 
-      <RuneIcon name="glass-back-2" type="glass" size={48} />
+      <Back2Glass size={48} />
     </div>
   );
 }
 ```
 
-Icon ids come from the [icon browser](https://runeicons.com/icons).
+Each icon style is its own ES module, and the package sets `"sideEffects": false`, so a bundler that tree-shakes only includes the icons you import. Browse the icons in the [icon browser](https://runeicons.com/icons).
+
+## Naming
+
+Each icon has one component per style. The component name is the icon's file name in PascalCase, with the style as a suffix. The `normal` style has no suffix. This matches `runeicons-react-native`.
+
+| Style       | Suffix      | Example            | Count |
+| :---------- | :---------- | :----------------- | ----: |
+| `normal`    | none        | `ArrowDown`        |   221 |
+| `duotone`   | `Duotone`   | `ArrowDownDuotone` |   218 |
+| `fill`      | `Fill`      | `HouseFill`        |   129 |
+| `pixelated` | `Pixelated` | `HousePixelated`   |   215 |
+| `glass`     | `Glass`     | `ArchiveGlass`     |   136 |
+
+Not every icon exists in every style. Importing a name that does not exist is a type error.
 
 ## Props
+
+| Prop   | Type     | Default | Description                 |
+| :----- | :------- | :------ | :-------------------------- |
+| `size` | `number` | `24`    | Width and height in pixels. |
+
+Icon components only accept `size`. They do not forward `className`, `style` or other attributes to the `svg`. Wrap the icon in an element to style it. The types are exported as `IconProps` and `IconComponent`.
+
+## Per-icon imports
+
+Each icon is also available on its own subpath, which helps when a dev server does not tree-shake the root import:
+
+```tsx
+import { ArrowDown } from "runeicons-react/icons/ArrowDown";
+```
+
+## RuneIcon
+
+`RuneIcon` picks an icon by its id at runtime:
+
+```tsx
+import { RuneIcon } from "runeicons-react";
+
+<RuneIcon name="tools-house" type="fill" size={32} />;
+```
+
+Because the id is a string, a bundler cannot tell which icons you use, so **`RuneIcon` adds every icon to your bundle** (about 1.9 MB minified). Use it only when the icon really is chosen at runtime, for example from user data. Otherwise import the components above.
 
 | Prop   | Type                                                        | Default    | Description                                                          |
 | :----- | :---------------------------------------------------------- | :--------- | :------------------------------------------------------------------- |
@@ -41,7 +81,7 @@ Icon ids come from the [icon browser](https://runeicons.com/icons).
 | `type` | `"normal" \| "duotone" \| "fill" \| "pixelated" \| "glass"` | `"normal"` | Style. Renders nothing if the icon has no variant in that style.     |
 | `size` | `number`                                                    | `24`       | Width and height in pixels.                                          |
 
-`RuneIcon` only accepts these three props. It does not forward `className`, `style` or other attributes to the `svg`. Wrap the icon in an element to style it.
+`RuneIcon` only accepts these three props. Icon ids come from the [icon browser](https://runeicons.com/icons).
 
 ## Styles
 
@@ -83,8 +123,9 @@ Notes on these helpers:
 
 ## Framework notes
 
-- `RuneIcon` is a plain function component with no hooks. It renders correctly on the server (the test suite checks `renderToString`).
-- It returns `null` for an unknown `name` or a missing `type` variant.
+- Icon components and `RuneIcon` are plain function components with no hooks. They render correctly on the server (the test suite checks `renderToString`).
+- The SVG children are rendered as React elements, not with `dangerouslySetInnerHTML`, so the icons work under a strict Content Security Policy, including Trusted Types.
+- `RuneIcon` returns `null` for an unknown `name` or a missing `type` variant.
 
 ## Brand logos
 
@@ -117,7 +158,7 @@ pnpm --filter runeicons-react test
 pnpm --filter runeicons-react build
 ```
 
-The generated data file `src/icons.generated.ts` is produced from the SVG files in the repository's `public/` folder by `scripts/build.ts`. It is git-ignored, so run `test` or `build` before using the source.
+`scripts/build.ts` reads the SVG files in the repository's `public/` folder and generates the icon data (`src/icons.generated.ts`), one component per icon style (`src/icons/`), the barrel that re-exports them (`src/components.generated.ts`) and the id lookup used by `RuneIcon` (`src/registry.generated.ts`). These files are git-ignored, so run `test` or `build` before using the source.
 
 ## Credits
 
