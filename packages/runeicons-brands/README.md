@@ -1,4 +1,27 @@
-# runeicons-brands
+<p align="center">
+  <a href="https://runeicons.com">
+    <img src="https://avatars.githubusercontent.com/u/334137457?v=4&s=192" alt="Rune Icons" width="96" height="96" />
+  </a>
+</p>
+
+<h1 align="center">runeicons-brands</h1>
+
+<p align="center">
+  1,100+ developer and design brand logos as SVG.<br />Each logo comes with its license and official link.
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/runeicons-brands"><img alt="npm" src="https://img.shields.io/npm/v/runeicons-brands?style=flat-square&color=7c5cff" /></a>
+  <a href="https://www.npmjs.com/package/runeicons-brands"><img alt="downloads" src="https://img.shields.io/npm/dm/runeicons-brands?style=flat-square&color=7c5cff" /></a>
+  <a href="https://www.npmjs.com/package/runeicons-brands"><img alt="total downloads" src="https://img.shields.io/npm/dt/runeicons-brands?style=flat-square&label=total%20downloads&color=7c5cff" /></a>
+  <a href="https://github.com/Runeicons/runeicons/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache_2.0-7c5cff?style=flat-square" /></a>
+</p>
+
+<p align="center">
+  <a href="https://runeicons.com/icons">Browse icons</a> ·
+  <a href="https://runeicons.com/brands">Brand logos</a> ·
+  <a href="https://github.com/Runeicons/runeicons/issues">Issues</a>
+</p>
 
 Brand logos of 1,100+ popular developer and design tools as SVG files: AI, languages, frameworks, databases, cloud, payments, security, design tools and more. Each logo comes with its license, its official site, and a link to the owner's brand guidelines where one exists. They are the same logos as the [Brands page](https://runeicons.com/brands).
 

@@ -1,4 +1,27 @@
-# runeicons-mcp
+<p align="center">
+  <a href="https://runeicons.com">
+    <img src="https://avatars.githubusercontent.com/u/334137457?v=4&s=192" alt="Rune Icons" width="96" height="96" />
+  </a>
+</p>
+
+<h1 align="center">runeicons-mcp</h1>
+
+<p align="center">
+  An MCP server that gives AI agents access to the <a href="https://runeicons.com">Rune Icons</a> library.<br />350+ icons, 900+ variants, five styles.
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/runeicons-mcp"><img alt="npm" src="https://img.shields.io/npm/v/runeicons-mcp?style=flat-square&color=7c5cff" /></a>
+  <a href="https://www.npmjs.com/package/runeicons-mcp"><img alt="downloads" src="https://img.shields.io/npm/dm/runeicons-mcp?style=flat-square&color=7c5cff" /></a>
+  <a href="https://www.npmjs.com/package/runeicons-mcp"><img alt="total downloads" src="https://img.shields.io/npm/dt/runeicons-mcp?style=flat-square&label=total%20downloads&color=7c5cff" /></a>
+  <a href="https://github.com/Runeicons/runeicons/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache_2.0-7c5cff?style=flat-square" /></a>
+</p>
+
+<p align="center">
+  <a href="https://runeicons.com/icons">Browse icons</a> ·
+  <a href="https://runeicons.com/brands">Brand logos</a> ·
+  <a href="https://github.com/Runeicons/runeicons/issues">Issues</a>
+</p>
 
 An [MCP](https://modelcontextprotocol.io) server that gives AI agents access to the [RuneIcons](https://runeicons.com) library. It has 350+ icons and 900+ variants across five styles: normal (outline), duotone, fill, pixelated, and glass, plus 1,100+ third-party brand logos. Agents can search icons and get ready-to-use SVG source to place in your code, and look up brand logos with their usage notices.
 
@@ -103,12 +126,12 @@ The server exposes six tools: three for icons (`search_icons`, `get_icon`, `list
 
 Search the library by text, category, and style. The same icon id can appear once per style, so use `style` to get one variant. Results are ranked with exact id or name matches first.
 
-| Parameter  | Type     | Required | Description                                                                                         |
-| :--------- | :------- | :------- | :-------------------------------------------------------------------------------------------------- |
-| `query`    | `string` | No       | Up to 100 characters. Matched case-insensitively against id, name, category, and tags               |
-| `category` | `string` | No       | Up to 50 characters. Exact category name, for example `navigation`. See `list_categories`          |
-| `style`    | `string` | No       | One of `normal`, `duotone`, `fill`, `pixelated`, `glass`                                            |
-| `limit`    | `number` | No       | Integer from 1 to 200. Default 50                                                                   |
+| Parameter  | Type     | Required | Description                                                                               |
+| :--------- | :------- | :------- | :---------------------------------------------------------------------------------------- |
+| `query`    | `string` | No       | Up to 100 characters. Matched case-insensitively against id, name, category, and tags     |
+| `category` | `string` | No       | Up to 50 characters. Exact category name, for example `navigation`. See `list_categories` |
+| `style`    | `string` | No       | One of `normal`, `duotone`, `fill`, `pixelated`, `glass`                                  |
+| `limit`    | `number` | No       | Integer from 1 to 200. Default 50                                                         |
 
 Example call and response:
 
@@ -187,12 +210,12 @@ weather           43      11      11     4         11      6
 
 Search the brand logo library by text, group, and license tier. Each result shows the slug, name, group, and license. Results are ranked with exact slug or name matches first, then shorter names.
 
-| Parameter | Type     | Required | Description                                                                                       |
-| :-------- | :------- | :------- | :------------------------------------------------------------------------------------------------ |
-| `query`   | `string` | No       | Up to 100 characters. Matched case-insensitively against slug, name, group, and tier             |
-| `group`   | `string` | No       | Up to 60 characters. Exact group name, for example `AI`. See `list_brand_groups`                  |
-| `tier`    | `string` | No       | One of `permissive`, `attribution`, `share-alike`, `trademark-only`                               |
-| `limit`   | `number` | No       | Integer from 1 to 200. Default 50                                                                 |
+| Parameter | Type     | Required | Description                                                                          |
+| :-------- | :------- | :------- | :----------------------------------------------------------------------------------- |
+| `query`   | `string` | No       | Up to 100 characters. Matched case-insensitively against slug, name, group, and tier |
+| `group`   | `string` | No       | Up to 60 characters. Exact group name, for example `AI`. See `list_brand_groups`     |
+| `tier`    | `string` | No       | One of `permissive`, `attribution`, `share-alike`, `trademark-only`                  |
+| `limit`   | `number` | No       | Integer from 1 to 200. Default 50                                                    |
 
 Example call and response:
 
@@ -214,10 +237,10 @@ If nothing matches, the response suggests a shorter query or calling `list_brand
 
 Get the metadata, official site, brand guidelines link, and SVG source for one brand logo by slug, for example `openai` or `claude-code`. The SVG is returned unaltered, so it does not use `currentColor`. The result always ends with the usage notice from [Brand logos](#brand-logos). An unknown slug returns an error result that suggests calling `search_brands`.
 
-| Parameter    | Type      | Required | Description                                      |
-| :----------- | :-------- | :------- | :----------------------------------------------- |
-| `slug`       | `string`  | Yes      | Brand slug, 1 to 120 characters                  |
-| `includeSvg` | `boolean` | No       | Include the full SVG source. Default `true`      |
+| Parameter    | Type      | Required | Description                                 |
+| :----------- | :-------- | :------- | :------------------------------------------ |
+| `slug`       | `string`  | Yes      | Brand slug, 1 to 120 characters             |
+| `includeSvg` | `boolean` | No       | Include the full SVG source. Default `true` |
 
 Example call and response:
 

@@ -1,6 +1,34 @@
-# runeicons-react
+<p align="center">
+  <a href="https://runeicons.com">
+    <img src="https://avatars.githubusercontent.com/u/334137457?v=4&s=192" alt="Rune Icons" width="96" height="96" />
+  </a>
+</p>
 
-React components for [RuneIcons](https://runeicons.com): 350+ icons and 900+ variants across five styles (normal, duotone, fill, pixelated, and glass).
+<h1 align="center">runeicons-react</h1>
+
+<p align="center">
+  Tree-shakeable React components for <a href="https://runeicons.com">Rune Icons</a>.<br />350+ icons, 900+ variants, five styles: normal, duotone, fill, pixelated and glass.
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/runeicons-react"><img alt="npm" src="https://img.shields.io/npm/v/runeicons-react?style=flat-square&color=7c5cff" /></a>
+  <a href="https://www.npmjs.com/package/runeicons-react"><img alt="downloads" src="https://img.shields.io/npm/dm/runeicons-react?style=flat-square&color=7c5cff" /></a>
+  <a href="https://www.npmjs.com/package/runeicons-react"><img alt="total downloads" src="https://img.shields.io/npm/dt/runeicons-react?style=flat-square&label=total%20downloads&color=7c5cff" /></a>
+  <a href="https://github.com/Runeicons/runeicons/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache_2.0-7c5cff?style=flat-square" /></a>
+</p>
+
+<p align="center">
+  <a href="https://runeicons.com/icons">Browse icons</a> ·
+  <a href="https://runeicons.com/brands">Brand logos</a> ·
+  <a href="https://github.com/Runeicons/runeicons/issues">Issues</a>
+</p>
+
+## Features
+
+- **Tree-shakeable:** one ES module per icon, so you only bundle what you import.
+- **CSP-safe:** SVG children render as React elements, with no `dangerouslySetInnerHTML`.
+- **Five styles** for every glyph, fully typed.
+- **Server-render ready** with no hooks and no client-only code.
 
 ## Install
 

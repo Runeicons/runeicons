@@ -1,13 +1,52 @@
-# Rune Icons
+<p align="center">
+  <a href="https://runeicons.com">
+    <img src="https://avatars.githubusercontent.com/u/334137457?v=4&s=192" alt="Rune Icons" width="96" height="96" />
+  </a>
+</p>
 
-An open-source icon library where every glyph comes in five styles: outline, duotone, fill, pixelated, and glass.
+<h1 align="center">Rune Icons</h1>
 
-**900+ icons** · free and open-source · copy any icon as SVG or JSX.
+<p align="center">
+  An open-source icon library where every glyph comes in five styles:<br />
+  outline, duotone, fill, pixelated, and glass.
+</p>
 
-[![Website](https://img.shields.io/badge/Website-runeicons.com-7c5cff?style=flat-square)](https://runeicons.com)
-[![License](https://img.shields.io/badge/Icons-Apache_2.0-7c5cff?style=flat-square)](LICENSE)
+<p align="center">
+  <b>900+ icons</b> · free and open-source · copy any icon as SVG or JSX.
+</p>
 
-[**Browse icons →**](https://runeicons.com) · [**Brand logos →**](https://runeicons.com/brands) · [**Contributing →**](CONTRIBUTING.md)
+<p align="center">
+  <a href="https://runeicons.com"><img alt="Website" src="https://img.shields.io/badge/Website-runeicons.com-7c5cff?style=flat-square" /></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/Icons-Apache_2.0-7c5cff?style=flat-square" /></a>
+  <!-- npm-total:start -->
+  <a href="#npm-packages"><img alt="total downloads" src="https://img.shields.io/badge/total%20downloads-4%2C707-7c5cff?style=flat-square" /></a>
+  <a href="#npm-packages"><img alt="downloads last 30 days" src="https://img.shields.io/badge/last%2030%20days-1%2C302-7c5cff?style=flat-square" /></a>
+  <!-- npm-total:end -->
+</p>
+
+<p align="center">
+  <a href="https://runeicons.com"><b>Browse icons →</b></a> ·
+  <a href="https://runeicons.com/brands"><b>Brand logos →</b></a> ·
+  <a href="CONTRIBUTING.md"><b>Contributing →</b></a>
+</p>
+
+## npm packages
+
+Download counts come straight from the npm registry. A download is not a unique person: CI runs and repeat installs count too.
+
+<!-- npm-stats:start -->
+| Package | Version on npm | Last 30 days | All-time |
+| :------ | :------------- | -----------: | -------: |
+| <img src="https://raw.githubusercontent.com/Runeicons/runeicons/main/public/brand/javascript.svg" alt="" width="20" height="20" align="center" /> [`runeicons`](https://www.npmjs.com/package/runeicons) | 0.1.0 | 256 | 653 |
+| <img src="https://raw.githubusercontent.com/Runeicons/runeicons/main/public/brand/react.svg" alt="" width="20" height="20" align="center" /> [`runeicons-react`](https://www.npmjs.com/package/runeicons-react) | 0.1.1 | 459 | 937 |
+| <img src="https://raw.githubusercontent.com/Runeicons/runeicons/main/public/brand/react.svg" alt="" width="20" height="20" align="center" /> [`runeicons-react-native`](https://www.npmjs.com/package/runeicons-react-native) | 0.1.0 | 72 | 470 |
+| <img src="https://raw.githubusercontent.com/Runeicons/runeicons/main/public/brand/vuejs.svg" alt="" width="20" height="20" align="center" /> [`runeicons-vue`](https://www.npmjs.com/package/runeicons-vue) | 0.1.0 | 51 | 440 |
+| <img src="https://raw.githubusercontent.com/Runeicons/runeicons/main/public/brand/svelte.svg" alt="" width="20" height="20" align="center" /> [`runeicons-svelte`](https://www.npmjs.com/package/runeicons-svelte) | 0.1.0 | 49 | 510 |
+| <img src="https://raw.githubusercontent.com/Runeicons/runeicons/main/public/brand/astro.svg" alt="" width="20" height="20" align="center" /> [`runeicons-astro`](https://www.npmjs.com/package/runeicons-astro) | 0.1.0 | 165 | 585 |
+| <img src="https://avatars.githubusercontent.com/u/334137457?v=4&s=40" alt="" width="20" height="20" align="center" /> [`runeicons-brands`](https://www.npmjs.com/package/runeicons-brands) | 0.1.0 | 127 | 509 |
+| <img src="https://cdn.simpleicons.org/modelcontextprotocol/7c5cff" alt="" width="20" height="20" align="center" /> [`runeicons-mcp`](https://www.npmjs.com/package/runeicons-mcp) | 0.1.0 | 123 | 603 |
+| **All 8 packages** | | **1,302** | **4,707** |
+<!-- npm-stats:end -->
 
 ## Features
 

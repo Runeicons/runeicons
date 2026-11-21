@@ -1,4 +1,27 @@
-# runeicons-svelte
+<p align="center">
+  <a href="https://runeicons.com">
+    <img src="https://avatars.githubusercontent.com/u/334137457?v=4&s=192" alt="Rune Icons" width="96" height="96" />
+  </a>
+</p>
+
+<h1 align="center">runeicons-svelte</h1>
+
+<p align="center">
+  Svelte 5 components for <a href="https://runeicons.com">Rune Icons</a>.<br />350+ icons, 900+ variants, five styles.
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/runeicons-svelte"><img alt="npm" src="https://img.shields.io/npm/v/runeicons-svelte?style=flat-square&color=7c5cff" /></a>
+  <a href="https://www.npmjs.com/package/runeicons-svelte"><img alt="downloads" src="https://img.shields.io/npm/dm/runeicons-svelte?style=flat-square&color=7c5cff" /></a>
+  <a href="https://www.npmjs.com/package/runeicons-svelte"><img alt="total downloads" src="https://img.shields.io/npm/dt/runeicons-svelte?style=flat-square&label=total%20downloads&color=7c5cff" /></a>
+  <a href="https://github.com/Runeicons/runeicons/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache_2.0-7c5cff?style=flat-square" /></a>
+</p>
+
+<p align="center">
+  <a href="https://runeicons.com/icons">Browse icons</a> ·
+  <a href="https://runeicons.com/brands">Brand logos</a> ·
+  <a href="https://github.com/Runeicons/runeicons/issues">Issues</a>
+</p>
 
 Svelte 5 components for [RuneIcons](https://runeicons.com): 350+ icons and 900+ variants across five styles (normal, duotone, fill, pixelated, and glass).
 
