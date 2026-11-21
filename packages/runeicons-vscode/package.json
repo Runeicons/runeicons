@@ -51,8 +51,8 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@types/bun": "^1.4.2",
-    "@types/vscode": "^1.90.0",
-    "typescript": "^5.7.0"
+    "@types/bun": "^1.4.5",
+    "@types/vscode": "^1.146.0",
+    "typescript": "^5.9.3"
   }
 }

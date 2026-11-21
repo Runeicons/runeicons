@@ -44,10 +44,10 @@
     "prepublishOnly": "bun run build && bun run typecheck && bun test"
   },
   "devDependencies": {
-    "@astrojs/compiler": "^2.11.0",
-    "@types/bun": "^1.4.2",
-    "astro": "^7.2.8",
-    "typescript": "^5.7.0"
+    "@astrojs/compiler": "^2.13.1",
+    "@types/bun": "^1.4.5",
+    "astro": "^7.4.13",
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "astro": ">=5.0.0 <8"

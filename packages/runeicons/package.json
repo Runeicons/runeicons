@@ -42,7 +42,7 @@
     "prepublishOnly": "bun run test && bun run build"
   },
   "devDependencies": {
-    "@types/bun": "^1.4.2",
-    "typescript": "^5.7.0"
+    "@types/bun": "^1.4.5",
+    "typescript": "^5.9.3"
   }
 }

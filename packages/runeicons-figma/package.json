@@ -14,8 +14,8 @@
     "test": "bun run build && bun run typecheck && bun test"
   },
   "devDependencies": {
-    "@figma/plugin-typings": "^1.110.0",
-    "@types/bun": "^1.4.2",
-    "typescript": "^5.7.0"
+    "@figma/plugin-typings": "^1.143.0",
+    "@types/bun": "^1.4.5",
+    "typescript": "^5.9.3"
   }
 }
