@@ -10926,6 +10926,17 @@ export const BRAND_LOGOS: BrandLogo[] = [
     "tone": "light"
   },
   {
+    "slug": "mapninja",
+    "name": "MapNinja",
+    "group": "Media & entertainment",
+    "site": "https://www.mapninja.io/",
+    "guidelines": "https://www.mapninja.io/brand",
+    "file": "/brand-logos/mapninja.svg",
+    "license": "brand-use",
+    "tier": "trademark-only",
+    "tone": "light"
+  },
+  {
     "slug": "steam",
     "name": "Steam",
     "group": "Media & entertainment",

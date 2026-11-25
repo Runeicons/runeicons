@@ -11205,6 +11205,17 @@ abstract final class RuneBrands {
     assetPath: "assets/brands/nintendo-switch.svg",
   );
 
+  static const RuneBrandData mapninja = RuneBrandData(
+    slug: "mapninja",
+    name: "MapNinja",
+    group: "Media & entertainment",
+    site: "https://www.mapninja.io/",
+    guidelines: "https://www.mapninja.io/brand",
+    license: "brand-use",
+    tier: RuneBrandTier.trademarkOnly,
+    assetPath: "assets/brands/mapninja.svg",
+  );
+
   static const RuneBrandData steam = RuneBrandData(
     slug: "steam",
     name: "Steam",
@@ -13686,6 +13697,7 @@ abstract final class RuneBrands {
     riotGames,
     playstation5,
     nintendoSwitch,
+    mapninja,
     steam,
     amazonPrime,
     audible,
